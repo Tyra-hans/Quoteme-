@@ -1,4 +1,5 @@
-import { Component, OnInit , Input} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Quote } from '../quote';
 
 @Component({
   selector: 'app-likes',
@@ -8,10 +9,19 @@ import { Component, OnInit , Input} from '@angular/core';
 
 
 export class LikesComponent implements OnInit {
- numberOfLikes: number ;
- constructor() { }
+  @Input()
+  quotes: Quote[] = [
+  ];
+  numberOfLikes: number = 0;
+  likeButtonClick() {
+    this.numberOfLikes++;
+  }
+  dislikeButtonClick() {
+    this.numberOfLikes--;
+  }
+  constructor() { }
 
-ngOnInit() {
+  ngOnInit() {
   }
 
 }
