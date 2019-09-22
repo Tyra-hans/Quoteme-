@@ -34,9 +34,11 @@ The user interacts with the landing page by reading quotes and voting on them an
 
 ## Known Bugs
 No known bugs. If you notice any, please see contact information below.
+
 ## Support and contact details
 For feedback , complaints or queries :
  email: tyrahans17@gmail.com , or call : 0705834383
+ 
 ### License
 This project is licensed under the terms of the MIT license.
 Copyright (c) 2019 **Tyra Hans**

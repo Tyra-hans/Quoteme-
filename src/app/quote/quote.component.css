@@ -1,0 +1,12 @@
+.parallax{
+  background-image: url(src/assets/bridge-footbridge-forest-5969.jpg);
+  text-align: center;
+  color: white;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 500px;
+}

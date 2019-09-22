@@ -7,33 +7,41 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quotes: Quote [] = [
-    new Quote (1, 'When you cant find the sunshine, be the sunshine', 'Waldor Fratt'),
-    new Quote (2, 'The grass is greener where you water it', 'Partrick Star'),
-    new Quote (3, 'Wherever life plants you bloom with grace', 'Peter Griffin'),
-    new Quote (4, 'Learn from yesterday,live for today, hope for tomorrow', 'Glenn Quagmire'),
-    new Quote (5, 'Take time to do what makes your soul happy', 'Cleveland'),
-    new Quote (6, 'The sun is a daily reminder that we too can rise from the darkness and shine our own light', 'Pastor Joe')
+
+  quotes: Quote[] = [
+     new  Quote(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son'),
+     new  Quote(2, 'Buy Cookies', 'I have to buy cookies for the parrot'),
+     new  Quote(3, 'Get new Phone Case', 'Diana has her birthday coming up soon'),
+     new  Quote(4, 'Get Dog Food', 'Pupper likes expensive snacks'),
+     new  Quote(5, 'Solve math homework', 'Damn Math'),
+     new  Quote(6, 'Plot my world domination plan', 'Cause I am an evil overlord')
   ];
-  toggleDetails(index) {
+toggleDetails(index) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
-
   completeQuote(isComplete, index) {
     if (isComplete) {
       this.quotes.splice(index, 1);
     }
   }
-  addNewQuote(quote){
+  deleteQuote(isComplete, index) {
+    if (isComplete) {
+      const toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`);
+
+      if (toDelete) {
+        this.quotes.splice(index, 1);
+      }
+    }
+  }
+  addNewQuote(quote) {
     const quoteLength = this.quotes.length;
     quote.id = quoteLength + 1;
     this.quotes.push(quote);
   }
 
+constructor() { }
 
-  constructor() { }
-
-  ngOnInit() {
+ngOnInit() {
   }
 
 }

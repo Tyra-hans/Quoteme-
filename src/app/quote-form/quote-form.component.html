@@ -1,42 +1,26 @@
 <div class="container-fluid">
-  <hr>
-  <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
-    <div class='row'>
-    <div class='col-md-6'>
-        <form  #quoteForm='ngForm'>
+    <h2 class="text-center">Create a quote!</h2>
+    <hr>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
 
-            <div class="form-group">
+        <div class="form-group">
 
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
-                <!-- <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-                  <p>Name is required</p>
-                </div> -->
-            </div>
+            <label for="name">Name</label>
+            <input type="text" required class="form-control" id="name"
+            [(ngModel)]="newQuote.name" name="name">
+            Display {{newQuote.name}}
+        </div>
+        <div class="form-group">
 
-            <div class="form-group">
+            <label for="description">Quote</label>
+            <textarea class="form-control" id="description" rows="4" required></textarea>
 
-                <label for="description">Quote</label>
-                <textarea class="form-control" id="description" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
-                <!-- <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
-                    <p>Description is required</p>
-                  </div> -->
+        </div>
+        <div class="form-group">
+            <label for="complete">added on</label>
+            <input type='date' id="complete" required>
 
-            </div>
-            <div class="form-group">
-
-              <label for="submitter">Submitted by</label>
-              <input type="text" required class="form-control" id="submitter"
-              name="submitter" required>
-
-
-          </div>
-            <button type="submit" class="btn btn-light">submit</button>
-          </form>
-    </div>
-
-
+        </div>
+        <button type="submit" class="btn btn-success">submit</button>
+    </form>
   </div>
-
-
-
