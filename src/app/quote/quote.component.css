@@ -50,6 +50,10 @@ h1 {
     background-color: #003333;
 }
 
+.blockquote-footer {
+    color: whitesmoke;
+}
+
 .form1 {
     color: white;
     font-family: 'Cinzel', serif;
