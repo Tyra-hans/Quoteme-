@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input,} from '@angular/core';
 import { Quote } from '../quote';
 
 @Component({
@@ -10,6 +10,7 @@ import { Quote } from '../quote';
 
 export class LikesComponent implements OnInit {
   @Input()
+
   quotes: Quote[] = [
   ];
   numberOfLikes: number = 0;

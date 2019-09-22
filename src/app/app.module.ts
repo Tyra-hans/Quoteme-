@@ -8,6 +8,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { DateCountPipe } from './date-count.pipe';
 import { LikesComponent } from './likes/likes.component';
+import { LikeDirective } from './like.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LikesComponent } from './likes/likes.component';
     QuoteDetailComponent,
     QuoteFormComponent,
     DateCountPipe,
-    LikesComponent
+    LikesComponent,
+    LikeDirective
   ],
   imports: [
     BrowserModule,
