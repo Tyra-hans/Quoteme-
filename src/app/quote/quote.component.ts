@@ -15,6 +15,9 @@ export class QuoteComponent implements OnInit {
     new Quote (5, 'Take time to do what makes your soul happy', 'Cleveland'),
     new Quote (6, 'The sun is a daily reminder that we too can rise from the darkness and shine our own light', 'Pastor Joe')
   ];
+  toggleDetails(index) {
+    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+  }
   constructor() { }
 
   ngOnInit() {
