@@ -1,9 +1,10 @@
-#### A Quote creaion website, QuoteMe, 20/09/2019
 # QuoteMe
+#### A Quote creation website, QuoteMe, 20/09/2019
+
 #### Built by **Tyra Hans**
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
 ## Nature
-Quote me is a Website that allows the user to create a quote or post an existing one . The user is also able to like or dislike posts that were posted prior (In this case hard coded quotes).
+Quote me is a Website that allows the user to create a quote or post an existing one . The user is also able to like or dislike posts that were posted prior (In this case hard coded quotes) as well as generated ones.
 
 ## Development server
 
