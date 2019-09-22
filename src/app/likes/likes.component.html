@@ -1,6 +1,14 @@
-<div>
-  <p>Number of likes</p>
-  <img class='like' src='./assets/likeicon.png'(click)="likeButtonClick()">
-  <img class='dislike' src='./assets/dislikeicon.png' (click)="dislikeButtonClick()">
-</div>
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+</head>
+<div>
+
+    <p>Number of likes</p>
+    <i class="material-icons" (click)="likeButtonClick()">
+    thumb_up_alt
+  </i>
+    <i class="material-icons" (click)="dislikeButtonClick()">
+    thumb_down
+  </i>
+</div>
