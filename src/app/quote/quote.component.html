@@ -1,6 +1,6 @@
-<div class="container-fluid">
+<div class="body">
     <div class="parallax">
-        <h1 class="animated bounce">Quote Me!</h1>
+        <h1 class="animated bounce delay-2s">Quote Me!</h1>
         <blockquote class="blockquote text-center">
             <p class="mb-0"> Write it on your heart that every day is the best day in the year.</p>
             <footer class="blockquote-footer">Ralph Waldo Emerson </footer>
@@ -8,26 +8,31 @@
     </div>
 
     <hr>
-
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12 form1">
             <div *ngFor='let quote of quotes;let i= index'>
                 <div>
-                    <h4 id={{i}}>{{quote.name}}</h4>
+                    <strong><h4 id={{i}}>{{quote.name}}</h4></strong>
                     <app-likes></app-likes>
-                    <button (click)='toggleDetails(i)' class="btn btn-light">details</button>
+                    <button (click)='toggleDetails(i)' class="btn btn-success">details</button>
                 </div>
 
                 <div *ngIf='quote.showDescription'>
                     <app-quote-detail [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-detail>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="animated fadeInDown">
-                <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-            </div>
 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="background2">
+            <div class="col-md-12">
+                <div class="animated fadeInDown">
+                    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

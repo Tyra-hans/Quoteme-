@@ -1,8 +1,13 @@
-.like{
-  width: 30px;
-  height: 30px;
+.like {
+    width: 30px;
+    height: 30px;
 }
-.dislike{
-  width: 40px;
-  height: 40px;
+
+.dislike {
+    width: 40px;
+    height: 40px;
+}
+
+.icon {
+    cursor: pointer;
 }
