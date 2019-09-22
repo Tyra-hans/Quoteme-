@@ -9,4 +9,8 @@
   background-size: cover;
   background-attachment: fixed;
   min-height: 500px;
+  width: 100%;
+}
+.container{
+  font-size: 15px;
 }
