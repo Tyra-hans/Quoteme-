@@ -19,10 +19,16 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
   }
 
-  completeQuote(isComplete, index){
+  completeQuote(isComplete, index) {
     if (isComplete) {
-      this.quotes.splice(index,1);
+      this.quotes.splice(index, 1);
     }
+  }
+  addNewQuote(quote) {
+    const quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    quote.completeDate = new Date(quote.completeDate);
+    this.quotes.unshift(quote);
   }
   constructor() { }
 
