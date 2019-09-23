@@ -20,7 +20,7 @@
 
         <div class="form-group">
             <label for="complete">added on</label>
-            <input class="input form-control" type="date" id="complete" [(ngModel)]="newQuote.date" name="date" #date='ngModel' required />
+            <input class="input form-control" type="date" id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #date='ngModel' required />
             <div [hidden]="date.valid || date.pristine" class="alert alert-danger">
                 <p>Date is required</p>
             </div>
