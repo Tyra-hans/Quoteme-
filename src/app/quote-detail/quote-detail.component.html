@@ -1,5 +1,5 @@
 <p>
     {{quote.description}}
 </p>
-<p>posted {{quote.completeDate | date}} </p>
+<p>posted {{quote.completeDate | date | dateCount}} </p>
 <button class='btn btn-light' (click)='quoteDelete(true)'>delete</button>

@@ -7,6 +7,12 @@ export class HighlightDirective {
 
   constructor(public elem: ElementRef) {
     this.elem.nativeElement.style.backgroundColor = 'yellow';
+
+
+
+
+
+
   }
 
 }
