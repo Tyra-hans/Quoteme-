@@ -9,7 +9,7 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-     new  Quote(1, 'Sometimes you don’t have to use many words to get your point across.', '— unknown', new Date(2020, 3, 14)),
+     new  Quote(1, 'Sometimes you don’t have to use many words to get your point across.', '— unknown', new Date(2018, 3, 14)),
      new  Quote(2, 'The only joy in the world is to begin.', '— Cesare Pavese', new Date(2019, 2, 14)),
      new  Quote(3, 'What you do not want done to yourself, do not do to others.', '— Confucius', new Date(2010, 3, 17)),
      new  Quote(4, 'Happiness is not something ready-made. It comes from your own actions.', '— Dalai Lama', new Date(2019, 3, 4)),

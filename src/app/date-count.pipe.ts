@@ -26,7 +26,8 @@ export class DateCountPipe implements PipeTransform {
       for (const i in intervals) {
         counter = Math.floor(seconds / intervals[i]);
         // tslint:disable-next-line: curly
-        if (counter > 0 || counter === 1) {
+        if (counter > 0)
+        if (counter === 1) {
           return counter + ' ' + i + ' ago';
         } else {
           return counter + ' ' + i + 's ago';
