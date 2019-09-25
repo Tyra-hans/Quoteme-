@@ -14,6 +14,7 @@
         background-size: cover;
         background-attachment: fixed;
         min-height: 800px;
+        overflow: hidden;
     }
     
     .background2 {
@@ -30,6 +31,7 @@
         min-height: 700px;
         width: 100%;
         margin-top: 5%;
+        overflow: hidden;
     }
     
     .mb-0 {
@@ -38,6 +40,7 @@
     
     .body {
         background-color: #003333;
+        overflow: hidden;
     }
     
     .blockquote-footer {

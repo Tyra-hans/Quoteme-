@@ -8,3 +8,12 @@
     border-color: whitesmoke;
     color: white;
 }
+
+.form-group {
+    margin-left: 25%;
+    align-content: center;
+}
+
+.container-fluid {
+    overflow: hidden;
+}
