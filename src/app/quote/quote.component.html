@@ -13,7 +13,7 @@
             <div *ngFor='let quote of quotes;let i= index'>
                 <div>
                     <strong><h4 id={{i}}  >{{quote.name}}</h4></strong>
-                    <app-likes></app-likes>
+
                     <button (click)='toggleDetails(i)' class="btn btn-success">details</button>
                 </div>
 

@@ -9,12 +9,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-     new  Quote(1, 'Sometimes you don’t have to use many words to get your point across.', '— unknown', new Date(2018, 3, 14)),
-     new  Quote(2, 'The only joy in the world is to begin.', '— Cesare Pavese', new Date(2019, 2, 14)),
-     new  Quote(3, 'What you do not want done to yourself, do not do to others.', '— Confucius', new Date(2010, 3, 17)),
-     new  Quote(4, 'Happiness is not something ready-made. It comes from your own actions.', '— Dalai Lama', new Date(2019, 3, 4)),
-     new  Quote(5, 'To be happy, we must not be too concerned with others.', '— Albert Camus', new Date(2018, 7, 12)),
-     new  Quote(6, 'Happiness depends upon ourselves.', '— Aristotle', new Date(2019, 5, 14))
+     new  Quote(1, 'Sometimes you don’t have to use many words to get your point across.', '— unknown', new Date(2018, 3, 14), 0),
+     new  Quote(2, 'The only joy in the world is to begin.', '— Cesare Pavese', new Date(2019, 2, 14), 0),
+     new  Quote(3, 'What you do not want done to yourself, do not do to others.', '— Confucius', new Date(2010, 3, 17), 0),
+     new  Quote(4, 'Happiness is not something ready-made. It comes from your own actions.', '— Dalai Lama', new Date(2019, 3, 4), 0),
+     new  Quote(5, 'To be happy, we must not be too concerned with others.', '— Albert Camus', new Date(2018, 7, 12), 0),
+     new  Quote(6, 'Happiness depends upon ourselves.', '— Aristotle', new Date(2019, 5, 14), 0)
   ];
 toggleDetails(index) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
@@ -40,6 +40,7 @@ toggleDetails(index) {
     quote.completeDate = new Date(quote.completeDate);
     this.quotes.push(quote);
   }
+
 
 constructor() { }
 

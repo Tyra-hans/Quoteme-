@@ -1,5 +1,19 @@
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
 <p>
     {{quote.description}}
 </p>
 <p>posted {{quote.completeDate | dateCount}} </p>
 <button class='btn btn-light' (click)='quoteDelete(true)'>delete</button>
+<div>
+
+
+    <i class="material-icons icon" (click)='likeButtonClick()'>
+  thumb_up_alt
+</i>
+    <i class="material-icons icon" (click)='dislikeButtonClick()'>
+  thumb_down
+</i> {{numberOfLikes}}
+</div>
