@@ -14,13 +14,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## BDD
 The user interacts with the landing page by reading quotes and voting on them and also through form inputs.The form allows the user to create and submit a quote.
 | Intention        | Action                 | Behaviour                                  |
-| ---------------- |:--------------------:  | ---------------------------:               |
-| landing page     | refresh/re-load        | landing page with animation and parallax   |
-| Quotes section   |quotes are found here   | quotes appear onsubmit                     |
-| form             |takes quote and name    | takes data to the quotes section           |
-| details button   |toggle details          | shows and hides details                    |
-| delete button    |onclick                 | deletes quote                              |
-| like & disllike  |onclick                 | adds or reduces likes                      |
+| ---------------- |:----------------------:| ------------------------------------------:|
+| Landing page     | Refresh/re-load        | Landing page with animation and parallax   |
+| Quotes section   | Quotes are found here  | Quotes appear onsubmit                     |
+| Form             | Takes quote and name   | Takes data to the quotes section           |
+| Details button   | Toggle details         | Shows and hides details                    |
+| Delete button    | Onclick                | Deletes quote                              |
+| Like & disllike  | Onclick                | Adds or reduces likes                      |
 ## Technologies Used
 Used HTML to create forms. Used bootstrap and a custom css stylesheet for styling. Angular was used to this build this app and typescript for functionality
 ## Known Bugs
