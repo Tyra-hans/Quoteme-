@@ -11,8 +11,9 @@ Quote me is a Website that allows the user to create a quote or post an existing
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## BDD
+## BEHAVIOUR DRIVEN DEVELOP BDD
 The user interacts with the landing page by reading quotes and voting on them and also through form inputs.The form allows the user to create and submit a quote.
+
 | Intention        | Action                 | Behaviour                                  |
 | ---------------- |:----------------------:| ------------------------------------------:|
 | Landing page     | Refresh/re-load        | Landing page with animation and parallax   |
@@ -21,6 +22,7 @@ The user interacts with the landing page by reading quotes and voting on them an
 | Details button   | Toggle details         | Shows and hides details                    |
 | Delete button    | Onclick                | Deletes quote                              |
 | Like & disllike  | Onclick                | Adds or reduces likes                      |
+
 ## Technologies Used
 Used HTML to create forms. Used bootstrap and a custom css stylesheet for styling. Angular was used to this build this app and typescript for functionality
 ## Known Bugs
